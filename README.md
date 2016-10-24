@@ -1,6 +1,6 @@
 # Mastermind
 
-**TODO: Add description**
+A command line version of the [Mastermind board game](https://en.wikipedia.org/wiki/Mastermind_(board_game) "Mastermind")
 
 ## Installation
 
