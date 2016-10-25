@@ -18,5 +18,22 @@ defmodule Mastermind do
   end
 
   # get guess
+  def get_guess do
+    IO.gets "What is your guess?\n> "
+  end
+
   # check guess -> return correct colors / positions
+  def check_guess(code, code) do
+    %{win: true, colors: 4, positions: 4}
+  end
+
+  def check_guess(guess, code) do
+    guess_colors = String.to_charlist(guess)
+    code_colors = String.to_charlist(code)
+
+    colors = Enum.count(guess_colors, fn(c) -> Enum.member?(code_colors, c) end)
+    positions = 0
+
+    %{win: false, colors: colors, positions: positions}
+  end
 end
