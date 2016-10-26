@@ -1,19 +1,23 @@
 # Mastermind
 
-A command line version of the [Mastermind board game](https://en.wikipedia.org/wiki/Mastermind_(board_game) "Mastermind")
+A command line version of the [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game) board game
 
-## Installation
+## To Play
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+1. If you haven't already, install [Elixir](http://elixir-lang.org/install.html)
 
-  1. Add mastermind to your list of dependencies in `mix.exs`:
+2. Clone the repository:
 
-        def deps do
-          [{:mastermind, "~> 0.0.1"}]
-        end
+        $ git clone https://github.com/patwey/mastermind.git
 
-  2. Ensure mastermind is started before your application:
+3. Compile the project:
 
-        def application do
-          [applications: [:mastermind]]
-        end
+        $ mix compile
+
+4. Start up an IEx session inside the project:
+
+        $ iex -S mix
+
+5. Start the game:
+
+        iex> Mastermind.play
