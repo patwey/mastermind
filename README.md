@@ -1,6 +1,6 @@
 # Mastermind
 
-A command line version of the [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game) board game
+A command line version of the [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game)) board game
 
 ## To Play
 
