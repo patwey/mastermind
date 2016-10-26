@@ -16,7 +16,7 @@ defmodule MastermindTest do
     code = "RGBY"
     guess = code
 
-    result = Mastermind.check_guess(guess, code)
+    result = Mastermind.check_guess(guess, code, 10)
 
     assert result == %{colors: 4, positions: 4}
   end
@@ -25,7 +25,7 @@ defmodule MastermindTest do
     code = "RGBY"
     guess = "RWPY"
 
-    %{colors: colors} = Mastermind.check_guess(guess, code)
+    %{colors: colors} = Mastermind.check_guess(guess, code, 10)
 
     assert colors == 2
   end
@@ -34,7 +34,7 @@ defmodule MastermindTest do
     code = "RGBY"
     guess = "YGBR"
 
-    %{positions: positions} = Mastermind.check_guess(guess, code)
+    %{positions: positions} = Mastermind.check_guess(guess, code, 10)
 
     assert positions == 2
   end
@@ -43,7 +43,7 @@ defmodule MastermindTest do
     code = "RGBY"
     guess = "YGBR"
 
-    %{colors: colors, positions: positions} = Mastermind.check_guess(guess, code)
+    %{colors: colors, positions: positions} = Mastermind.check_guess(guess, code, 10)
 
     assert positions == 2
     assert colors == 4
